@@ -8,8 +8,8 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord ) {
 	vec2 uv = fragCoord/iResolution.xy - 0.5;
 
 	vec2 tunnelUV = vec2(
-		// Voor de X-as nemen we de afstand tot het midden.
-		length(uv) * 2.,
+		// Voor de X-as nemen we logaritme van de afstand tot het midden.
+		log(length(uv) * 2.),
 		// De Y loopt in een boog rond het midden. Met de atan() functie kunnen
 		// we de hoek van een vector berekenen. De return waarde ligt in
 		// [-PI, PI].
