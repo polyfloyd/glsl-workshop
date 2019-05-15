@@ -1,4 +1,4 @@
-// Deel 5 - texture
+// Deel 6 - texture
 
 void mainImage( out vec4 fragColor, in vec2 fragCoord ) {
 	vec2 uv = fragCoord/iResolution.xy;
@@ -14,4 +14,4 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord ) {
 
 // Opdracht:
 // - Spiegel de afbeelding over de Y as
-// - Toon de afbeelding in zwart-wit (tip, gebruik de "length()" functie)
+// - Toon de afbeelding in zwart-wit (tip, gebruik de "length()" functie op de texture)

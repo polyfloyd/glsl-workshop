@@ -15,12 +15,13 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord ) {
 	// iResolution is de resolutie van het venster, zoals (1920, 1080). Dit is
 	// een 4D vector, dus we moeten alleen de X en Y kolommen met `.xy`. Dit
 	// wordt in GLSL "swizzling" genoemd.
-	vec2 uv = fragCoord/iResolution.xy;
+	vec2 uv = fragCoord / iResolution.xy;
 
-	// Bereken een kleur voor de pixel.
+	// Bereken een kleur voor de pixel als R G B.
 	vec3 col = vec3(1, 0, 0);
 
-	// Schrijf de berekende kleur naar de output. De 1.0 is het alphacomponent.
+	// Schrijf de berekende kleur naar de output. De 1.0 is het alphacomponent,
+	// hier hoef je over het algemeen niks mee te doen.
 	fragColor = vec4(col, 1.0);
 }
 

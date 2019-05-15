@@ -1,4 +1,4 @@
-// Deel 7 - tunnel
+// Deel 8 - tunnel
 
 const float PI = 3.1415;
 
@@ -25,3 +25,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord ) {
 // Opdracht:
 // - Laat de tunnel zoomen op basis van de tijd
 // - Laat de tunnel draaien op basis van de tijd
+// - Gebruik log om een beter tunnel effect te maken
+//
+// Tip:
+// - Bij een rare lijn op shadertoy.com, zet "filter" naar "nearest" op iChannel0

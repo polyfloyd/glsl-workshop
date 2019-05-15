@@ -1,4 +1,4 @@
-// Deel 6 - rotate
+// Deel 7 - rotate
 
 // Ruimtelijke transformaties kunnen worden opgeslagen in een matrix. De
 // transformatie kan worden toegepast op een of meerdere vectoren door de

@@ -7,7 +7,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord ) {
 	float dist = distance(uv, vec2(.5));
 
 	// Inverteer de afstand en laat deze wat sneller oplopen.
-	float sphere = (1. - dist * 4.);
+	float sphere = 1. - dist * 4.;
 
 	vec3 col = vec3(0, 0, 1) * sphere;
 
